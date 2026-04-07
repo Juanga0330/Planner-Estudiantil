@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\Juanp\\Planner Estudiantil\\lib\\protobuf-java-4.31.1.jar",
+        "c:\\Users\\Juanp\\Planner Estudiantil\\lib\\jedis-7.3.0.jar",
+        "c:\\Users\\Juanp\\Planner Estudiantil\\lib\\gson-2.8.6.jar",
+        "c:\\Users\\Juanp\\Planner Estudiantil\\lib\\mysql-connector-j-9.6.0.jar"
+    ]
+}

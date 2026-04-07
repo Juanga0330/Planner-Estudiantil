@@ -1,23 +1,19 @@
 package Controlador;
 
-import java.util.List;
-import Dao.MateriaDao;
+import Dao.MateriaDaoMySQL;
 import Modelo.Materia;
+import java.util.List;
 
 public class MateriaControlador {
 
-    private MateriaDao dao = new MateriaDao();
+    private MateriaDaoMySQL dao = new MateriaDaoMySQL();
 
     public void crearMateria(int id, String nombre, String profesor, String horario, String aula) {
         dao.crear(new Materia(id, nombre, profesor, horario, aula));
     }
 
     public List<Materia> listarMaterias() {
-        return dao.leer();
-    }
-
-    public Materia buscarMateria(int id) {
-        return dao.buscarPorId(id);
+        return dao.listar();
     }
 
     public void actualizarMateria(int id, String nombre, String profesor, String horario, String aula) {
